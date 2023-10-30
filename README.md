@@ -18,7 +18,7 @@ Dựa trên giá trị entropy và các ngưỡng (mean, B, stdDeviation), chư�
 ## Lặp Vào Lần Kế Tiếp (nếu cần)
 Nếu bạn muốn thực hiện nhiều lần phân tích, chương trình cho phép nhập số lần (check) và lặp lại quá trình phân tích.
 ## Kết Thúc Và Đóng Tệp
-Khi đã hoàn thành phân tích hoặc gặp lỗi khi mở tệp, chương trình kết thúc và đóng tệp.
+- Khi đã hoàn thành phân tích hoặc gặp lỗi khi mở tệp, chương trình kết thúc và đóng tệp.
 ---
 ## Note
 Giải thuật này sử dụng entropy để xác định sự không bình thường trong dữ liệu mạng, và nếu phát hiện, nó có thể tăng hoặc giảm ngưỡng B để điều chỉnh độ nhạy của phát hiện tấn công DDoS. 
