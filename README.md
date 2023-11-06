@@ -28,3 +28,4 @@ Giải thuật này sử dụng entropy để xác định sự không bình th�
 Tuy nhiên, giải thuật này có thể cần được điều chỉnh và mở rộng để phù hợp với nhiều loại tấn công DDoS khác nhau.
 >>>>>>> c9b329f85da974363ee5b2dbbb885448cb5144d7
 # ddosAttack
+# ddosAttack
