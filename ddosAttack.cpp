@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 	double value, mean, sum, variance, stdDeviation, H, B = 300;
 	map<string, int> premapper;
 	ifstream myfile (argv[1]);
-	cout << "The alogrithm is run for ever 500 records in the data set." << endl;
 	cout << "If a DDoS attack is detected the output is specified as follows" << endl;
 	cout << "output: (Portocol, Source IP, Destination IP, Source Port, Destination Port)" << endl;
 	if (myfile.is_open())
