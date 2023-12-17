@@ -7,6 +7,9 @@
 3. Tính độ khuyếch đại (GainRatio) để thống kê sự tăng/giảm của Entropy
 4. Phân tích dựa vào thuật toán C4.5 Decicion tree thông qua việc chênh lệch Entropy từ đó liệt kê các địa chỉ IP đang truy cập bất thường
 ---
+## Sơ đồ giải thuật
+![picture](flowchart.png)
+---
 ## Compile
 ```
 git clone https://github.com/phamminh03/ddosAttack.git

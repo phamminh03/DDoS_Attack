@@ -8,12 +8,12 @@ int main(int argc, char *argv[])
 {
 	string line, key;
 	int t = 0;
-	double value,mean,sum,variance,stdDeviation,H,B=300;
-	map<string,int> premapper;
+	double value, mean, sum, variance, stdDeviation, H, B = 300;
+	map<string, int> premapper;
 	ifstream myfile (argv[1]);
 	cout << "The alogrithm is run for ever 500 records in the data set." << endl;
 	cout << "If a DDoS attack is detected the output is specified as follows" << endl;
-	cout << "output: (Portocol, Source IP,Destination IP, Source Port, Destination Port)" << endl;
+	cout << "output: (Portocol, Source IP, Destination IP, Source Port, Destination Port)" << endl;
 	if (myfile.is_open())
 	{
 		while(getline(myfile, line) && (t < 500))
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 				result.push_back(cell);
 			if (!lineStream && cell.empty())
 				result.push_back("");
-			key = result[10] + "," + result[11] + "," + result[12] + "," + result[13] + "," + result[14];
+			key = result[2] + ", " + result[11] + ", " + result[12] + ", " + result[13] + ", " + result[14];
 			if(premapper.find(key) == premapper.end())
 				premapper.insert(make_pair(key, 1));
 			else
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 					result.push_back(cell);
 				if (!lineStream && cell.empty())
 					result.push_back("");
-				key = result[10] + "," + result[11] + "," + result[12] + "," + result[13] + "," + result[14];
+				key = result[2] + ", " + result[11] + ", " + result[12] + ", " + result[13] + ", " + result[14];
 				if(mapper.find(key) == mapper.end())
 					mapper.insert(make_pair(key, 1));
 				else
